@@ -6,9 +6,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo 'BRANCH_NAME is using env'  env.BRANCH_NAME
-                echo 'CHANGE_BRANCH is using env' env.CHANGE_BRANCH 
-                echo 'CHANGE_TARGET is using env' env.CHANGE_TARGET
+                echo  env.BRANCH_NAME
+                echo  env.CHANGE_BRANCH 
+                echo  env.CHANGE_TARGET
             }
         }
         stage('Test') {
